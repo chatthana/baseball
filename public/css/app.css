@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit:200,300,400,400i);/*
+  Ivan Gabriele : http://www.ivangabriele.com/css-reset/
+  v2.5.1 | 20141120
+  License: MIT
+*/
+ 
+html{
+  color: #000;
+  background: #fff;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+input, select, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+}
+caption, th {
+  text-align: left;
+}
+fieldset, img {
+  border: 0;
+}
+legend {
+  color: #000;
+}
+ol, ul {
+  list-style: none;
+}
+sub {
+  vertical-align: text-bottom;
+}
+sup {
+  vertical-align: text-top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+textarea {
+  resize: none;
+}* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+.wrapper, .wrapper-spread, .clearfix, .row {
+  position: relative;
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.wrapper:before, .wrapper-spread:before, .clearfix:before, .row:before, .wrapper:after, .wrapper-spread:after, .clearfix:after, .row:after {
+  content: '';
+  display: table;
+}
+
+.wrapper:after, .wrapper-spread:after, .clearfix:after, .row:after {
+  clear: both;
+}
+
+.wrapper-spread {
+  width: auto;
+  margin: 0;
+}
+
+.clearfix, .row {
+  width: auto;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+}
+
+h1.no-padding, h2.no-padding, h3.no-padding, h4.no-padding, h5.no-padding, h6.no-padding {
+  padding: 0;
+}
+
+h1.no-margin, h2.no-margin, h3.no-margin, h4.no-margin, h5.no-margin, h6.no-margin {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.8em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.25em;
+}
+
+h4 {
+  font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+h6 {
+  font-size: 1.25em;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #dadada;
+  color: #000;
+  outline: 0 none;
+  cursor: pointer;
+}
+
+.button.red {
+  background-color: #ff6161;
+  color: #fff;
+}
+
+.button.rounded {
+  border-radius: 3px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.make-left {
+  float: left;
+}
+
+.make-right {
+  float: right;
+}
+
+[class^="grid-"] {
+  position: relative;
+  padding: 10px;
+  float: left;
+}
+
+.grid-1 {
+  width: calc(100%/12);
+}
+
+.grid-2 {
+  width: calc((100%/12) * 2);
+}
+
+.grid-3 {
+  width: calc(100%/4);
+}
+
+.grid-4 {
+  width: calc(100%/3);
+}
+
+.grid-5 {
+  width: calc((100%/12) * 5);
+}
+
+.grid-6 {
+  width: calc(100%/2);
+}
+
+.grid-7 {
+  width: calc((100%/12) * 7);
+}
+
+.grid-8 {
+  width: calc((100%/12) * 8);
+}
+
+.grid-9 {
+  width: calc((100%/12) * 9);
+}
+
+.grid-10 {
+  width: calc((100%/12) * 10);
+}
+
+.grid-11 {
+  width: calc((100%/12) * 11);
+}
+
+.grid-12 {
+  width: 100%;
+}
+
+html, body {
+  font-family: 'Kanit', sans-serif;
+  font-size: 100%;
+  background: url("https://raw.githubusercontent.com/chatthana/baseballapp/master/public/images/IMG_9487.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+#app {
+  overflow-x: hidden;
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -58px;
+  padding: 0 0 54px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  padding: 15px 0;
+}
+
+header a.header-logo {
+  display: block;
+  float: left;
+  padding: 0 10px;
+}
+
+header a.header-logo img {
+  max-width: 100px;
+}
+
+header .nav-container {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fff;
+}
+
+header .nav-container nav[role="navigation"] {
+  position: relative;
+  float: right;
+}
+
+header .nav-container nav[role="navigation"] ul > li {
+  float: left;
+  margin: 0 15px;
+}
+
+header .cart {
+  position: relative;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .cart .cart-container {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  width: 48px;
+  border-radius: 56%;
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  padding: 10px;
+  color: #fff;
+}
+
+footer .contact-information {
+  position: relative;
+}
+
+footer .contact-information .icons {
+  position: relative;
+  float: left;
+}
+
+footer .contact-information .icons img {
+  display: inline-block;
+  max-width: 32px;
+}
+
+footer .contact-information .telephone-numbers {
+  position: relative;
+  float: left;
+  margin: 0 10px;
+}

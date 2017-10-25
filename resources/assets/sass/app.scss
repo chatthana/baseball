@@ -1,0 +1,92 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Kanit:200,300,400,400i');
+
+@import "../../bower/css-reset/reset.css";
+@import "blacknight";
+
+html,body {
+  font-family: 'Kanit', sans-serif;
+  font-size: 100%;
+  background: url('https://raw.githubusercontent.com/chatthana/baseballapp/master/public/images/IMG_9487.jpg') no-repeat center;
+  background-size:cover;
+  background-attachment:fixed;
+  width:100%;
+  height:100%;
+  color:#fff;
+}
+
+#app {
+  overflow-x:hidden;
+  min-height:100%;
+  height:auto;
+  margin:0 auto -58px;
+  padding:0 0 54px;
+}
+
+header {
+  position:relative;
+  width:100%;
+  color:#fff;
+  padding:15px 0;
+  a.header-logo {
+    display:block;
+    float:left;
+    padding:0 10px;
+    img {
+      max-width:100px;
+    }
+  }
+  .nav-container {
+    position:relative;
+    padding-top:20px;
+    padding-bottom:8px;
+    border-bottom:2px solid #fff;
+    nav[role="navigation"] {
+      position:relative;
+      float:right;
+      ul {
+        > li {
+          float:left;
+          margin:0 15px;
+        }
+      }
+    }
+  }
+  .cart {
+    position:relative;
+    padding:10px 0;
+    text-align:center;
+    .cart-container {
+      position:relative;
+      display:inline-block;
+      padding:15px;
+      width:48px;
+      border-radius:56%;
+      background-color:#ff4d4d;
+      color:#fff;
+    }
+  }
+}
+
+footer {
+  position:relative;
+  padding:10px;
+  color:#fff;
+  .contact-information {
+    position:relative;
+    .icons {
+      position:relative;
+      float:left;
+      img {
+        display:inline-block;
+        max-width:32px;
+      }
+    }
+    .telephone-numbers {
+      position:relative;
+      float:left;
+      margin:0 10px;
+    }
+  }
+}
