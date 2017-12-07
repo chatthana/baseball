@@ -11,7 +11,7 @@
     <div id="app">
       <header>
         <div class="wrapper-spread">
-          <div class="clearfix">
+          <div class="row">
             <div class="grid-1">
               <a href="#" class="header-logo">
                 <img src="https://raw.githubusercontent.com/chatthana/baseballapp/master/public/images/Main-Logo.png" />

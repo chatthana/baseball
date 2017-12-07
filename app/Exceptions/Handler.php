@@ -48,6 +48,9 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        // if ($exception instanceof \Tymon\JWTAuth\Middleware\GetUserFromToken::class) {
+        //   die('fuck');
+        // }
         return parent::render($request, $exception);
     }
 }

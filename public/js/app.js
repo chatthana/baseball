@@ -42826,7 +42826,7 @@ exports = module.exports = __webpack_require__(45)(undefined);
 
 
 // module
-exports.push([module.i, "\n.product-container[data-v-53099dc7] {\n  position: relative;\n  width: 420px;\n  background-color: #fff;\n  opacity: 0.85;\n  color: #000;\n  border-radius: 8px;\n  padding: 30px 0;\n}\n.product-container .product-image[data-v-53099dc7] {\n  position: relative;\n  float: left;\n  padding: 10px;\n  width: 50%;\n}\n.product-container .product-image img[data-v-53099dc7] {\n  max-width: 100%;\n}\n.product-container .details[data-v-53099dc7] {\n  position: relative;\n  float: left;\n  width: 50%;\n  padding: 10px;\n}\n.product-container .details .specification[data-v-53099dc7] {\n  position: relative;\n  margin: 10px 0;\n}\n.product-container .details .specification p[data-v-53099dc7] {\n  margin: 5px 0;\n}\n.product-container .details .specification .title[data-v-53099dc7] {\n  color: #515151;\n}\n.product-container .details .specification .value[data-v-53099dc7] {\n  color: #979797;\n}\n", ""]);
+exports.push([module.i, "\n.product-container[data-v-53099dc7] {\n  position: relative;\n  /*width: 420px;*/\n  width:100%;\n  background-color: #fff;\n  opacity: 0.95;\n  color: #000;\n  border-radius: 8px;\n  padding: 30px 0;\n}\n.product-container .product-image[data-v-53099dc7] {\n  position: relative;\n  float: left;\n  padding: 10px;\n  width: 50%;\n}\n.product-container .product-image img[data-v-53099dc7] {\n  max-width: 100%;\n}\n.product-container .details[data-v-53099dc7] {\n  position: relative;\n  float: left;\n  width: 50%;\n  padding: 10px;\n}\n.product-container .details .specification[data-v-53099dc7] {\n  position: relative;\n  margin: 10px 0;\n}\n.product-container .details .specification p[data-v-53099dc7] {\n  margin: 5px 0;\n}\n.product-container .details .specification .title[data-v-53099dc7] {\n  color: #515151;\n}\n.product-container .details .specification .value[data-v-53099dc7] {\n  color: #979797;\n}\n", ""]);
 
 // exports
 
@@ -43251,12 +43251,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-        console.log('Component mounted.');
-        console.log(axios);
+  mounted: function mounted() {
+    console.log('========== NOTIFICATION(S) ==========\r\n Component Mounted Successfully');
+  },
+
+
+  methods: {
+    test: function test() {
+      alert('FUCK');
     }
+  }
 });
 
 /***/ }),
@@ -43267,59 +43274,95 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "product-container clearfix" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "details" }, [
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _vm._m(3),
+      _vm._v(" "),
+      _vm._m(4),
+      _vm._v(" "),
+      _vm._m(5),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "button red rounded",
+          attrs: { href: "#" },
+          on: { click: _vm.test }
+        },
+        [_vm._v("Add to cart")]
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "product-container clearfix" }, [
-      _c("div", { staticClass: "product-image" }, [
-        _c("img", {
-          attrs: {
-            src:
-              "https://raw.githubusercontent.com/chatthana/baseballapp/master/public/images/Bestball-Bat.png",
-            alt: ""
-          }
-        })
-      ]),
+    return _c("div", { staticClass: "product-image" }, [
+      _c("img", {
+        attrs: {
+          src:
+            "https://raw.githubusercontent.com/chatthana/baseballapp/master/public/images/Bestball-Bat.png",
+          alt: ""
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "specification" }, [
+      _c("p", { staticClass: "title" }, [_vm._v("SERIES :")]),
       _vm._v(" "),
-      _c("div", { staticClass: "details" }, [
-        _c("div", { staticClass: "specification" }, [
-          _c("p", { staticClass: "title" }, [_vm._v("SERIES :")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "value" }, [_vm._v("John Weller's Fucker")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "specification" }, [
-          _c("p", { staticClass: "title" }, [_vm._v("น้ำหนัก :")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "value" }, [_vm._v("12 Kg.")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "specification" }, [
-          _c("p", { staticClass: "title" }, [_vm._v("วัสดุ :")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "value" }, [_vm._v("สแตนเลส")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "specification" }, [
-          _c("p", { staticClass: "title" }, [_vm._v("สี :")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "value" }, [_vm._v("ดำเมททัลลิก")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "specification" }, [
-          _c("p", { staticClass: "title" }, [_vm._v("ราคา :")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "value" }, [_vm._v("690 บาท")])
-        ]),
-        _vm._v(" "),
-        _c("a", { staticClass: "button red rounded", attrs: { href: "#" } }, [
-          _vm._v("Add to cart")
-        ])
-      ])
+      _c("p", { staticClass: "value" }, [_vm._v("John Weller's Fucker")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "specification" }, [
+      _c("p", { staticClass: "title" }, [_vm._v("น้ำหนัก :")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "value" }, [_vm._v("12 Kg.")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "specification" }, [
+      _c("p", { staticClass: "title" }, [_vm._v("วัสดุ :")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "value" }, [_vm._v("สแตนเลส")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "specification" }, [
+      _c("p", { staticClass: "title" }, [_vm._v("สี :")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "value" }, [_vm._v("ดำเมททัลลิก")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "specification" }, [
+      _c("p", { staticClass: "title" }, [_vm._v("ราคา :")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "value" }, [_vm._v("690 บาท")])
     ])
   }
 ]

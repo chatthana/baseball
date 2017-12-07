@@ -24,7 +24,7 @@
         <p class="title">ราคา :</p>
         <p class="value">690 บาท</p>
       </div>
-      <a href="#" class="button red rounded">Add to cart</a>
+      <a href="#" class="button red rounded" v-on:click="test">Add to cart</a>
     </div>
   </div>
 </template>
@@ -32,9 +32,10 @@
 <style scoped>
   .product-container {
     position: relative;
-    width: 420px;
+    /*width: 420px;*/
+    width:100%;
     background-color: #fff;
-    opacity: 0.85;
+    opacity: 0.95;
     color: #000;
     border-radius: 8px;
     padding: 30px 0;
@@ -79,8 +80,13 @@
 <script>
   export default {
       mounted() {
-          console.log('Component mounted.')
-          console.log(axios)
+          console.log('========== NOTIFICATION(S) ==========\r\n Component Mounted Successfully');
+      },
+
+      methods: {
+        test: () => {
+          alert('FUCK');
+        }
       }
   }
 </script>
