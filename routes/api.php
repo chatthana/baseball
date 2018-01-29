@@ -21,4 +21,7 @@ Route::post('/login', 'AuthenticationController@login');
 
 Route::post('/authenticate', 'AuthenticationController@authenticate');
 
-Route::resource('products', 'ProductController', ['only' => ['index']]);
+# Prefix the version of the API
+Route::prefix('v1')->group(function() {
+  Route::resource('products', 'ProductController', ['only' => ['index', 'show']]);
+});

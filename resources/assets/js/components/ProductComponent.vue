@@ -6,7 +6,7 @@
     <div class="details">
       <div class="specification">
         <p class="title">SERIES :</p>
-        <p class="value">John Weller's Fucker</p>
+        <p class="value">{{product.name}}</p>
       </div>
       <div class="specification">
         <p class="title">น้ำหนัก :</p>
@@ -22,23 +22,24 @@
       </div>
       <div class="specification">
         <p class="title">ราคา :</p>
-        <p class="value">690 บาท</p>
+        <p class="value">{{product.price}} บาท</p>
       </div>
-      <a href="#" class="button red rounded" v-on:click="test">Add to cart</a>
+      <a href="#" v-on:click="getProduct(product.id)" class="button red rounded">Add to cart</a>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
   .product-container {
     position: relative;
-    /*width: 420px;*/
     width:100%;
+    max-width:425px;
     background-color: #fff;
     opacity: 0.95;
     color: #000;
     border-radius: 8px;
     padding: 30px 0;
+    margin:10px 0;
   }
 
   .product-container .product-image {
@@ -46,6 +47,10 @@
     float: left;
     padding: 10px;
     width: 50%;
+    @media screen and (max-width:479px) {
+      float:none;
+      width:100%;
+    }
   }
 
   .product-container .product-image img {
@@ -57,11 +62,19 @@
     float: left;
     width: 50%;
     padding: 10px;
+    @media screen and (max-width: 479px) {
+      float:none;
+      width:100%;
+      text-align:center;
+    }
   }
 
   .product-container .details .specification {
     position: relative;
     margin: 10px 0;
+    @media screen and (max-width: 479px) {
+      text-align:center;
+    }
   }
 
   .product-container .details .specification p {
@@ -80,12 +93,20 @@
 <script>
   export default {
       mounted() {
-          console.log('========== NOTIFICATION(S) ==========\r\n Component Mounted Successfully');
+        console.log('===== Product component mounted =====');
+      },
+
+      props: ['item'],
+
+      data() {
+        return {
+          product: this.item
+        }
       },
 
       methods: {
-        test: () => {
-          alert('FUCK');
+        getProduct(product_id) {
+          console.log(product_id);
         }
       }
   }

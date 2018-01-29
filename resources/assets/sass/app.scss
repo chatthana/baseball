@@ -41,7 +41,7 @@ header {
     position:relative;
     padding-top:20px;
     padding-bottom:8px;
-    border-bottom:2px solid #fff;
+    // border-bottom:2px solid #fff;
     nav[role="navigation"] {
       position:relative;
       float:right;
@@ -66,6 +66,22 @@ header {
       background-color:#ff4d4d;
       color:#fff;
     }
+  }
+}
+
+// Home page
+.logo-container {
+  width:100%;
+  > img {
+    width:100%;
+    max-width:365px;
+  }
+}
+
+.introduction {
+  @media screen and (max-width:479px) {
+    text-align:center;
+    font-size:0.9em;
   }
 }
 

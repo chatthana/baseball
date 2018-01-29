@@ -1,3 +1,10 @@
+// Breakpoint Activation
+$mobile-max-width: 479px;
+$desktop-min-width: 1080px;
+// Tablet width range
+$tablet-min-width: 480px;
+$tablet-max-width: 767px;
+
 * {
   box-sizing:border-box;
   -webkit-box-sizing:border-box;
@@ -115,50 +122,93 @@ h6 {
   float:left;
 }
 
-.grid-1 {
-  width:calc(100%/12);
+/**
+ * GRID FOR DESKTOP
+ */
+@media screen and (min-width: $desktop-min-width) {
+  .grid-desktop-1 {
+    width:calc(100%/12);
+  }
+
+  .grid-desktop-2 {
+    width:calc((100%/12) * 2);
+  }
+
+  .grid-desktop-3 {
+    width:calc(100%/4);
+  }
+
+  .grid-desktop-4 {
+    width:calc(100%/3);
+  }
+
+  .grid-desktop-5 {
+    width:calc((100%/12) * 5);
+  }
+
+  .grid-desktop-6 {
+    width:calc(100%/2);
+  }
+
+  .grid-desktop-7 {
+    width:calc((100%/12) * 7);
+  }
+
+  .grid-desktop-8 {
+    width:calc((100%/12) * 8);
+  }
+
+  .grid-desktop-9 {
+    width:calc((100%/12) * 9);
+  }
+
+  .grid-desktop-10 {
+    width:calc((100%/12) * 10);
+  }
+
+  .grid-desktop-11 {
+    width:calc((100%/12) * 11);
+  }
+
+  .grid-desktop-12 {
+    width:100%;
+  }
 }
 
-.grid-2 {
-  width:calc((100%/12) * 2);
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+  .grid-tablet-3 {
+    width:calc(100%/4);
+  }
+
+  .grid-tablet-4 {
+    width:calc(100%/3);
+  }
+
+  .grid-tablet-6 {
+    width:50%;
+  }
+
+  .grid-tablet-12 {
+    width:100%;
+  }
 }
 
-.grid-3 {
-  width:calc(100%/4);
-}
+@media screen and (max-width: $mobile-max-width) {
+  [class^="grid-mobile-"] {}
 
-.grid-4 {
-  width:calc(100%/3);
-}
+  .grid-mobile-3 {
+    width:calc(100%/4);
+  }
 
-.grid-5 {
-  width:calc((100%/12) * 5);
-}
+  .grid-mobile-4 {
+    width:calc(100%/3);
+  }
 
-.grid-6 {
-  width:calc(100%/2);
-}
+  .grid-mobile-6 {
+    width:50%;
+  }
 
-.grid-7 {
-  width:calc((100%/12) * 7);
-}
-
-.grid-8 {
-  width:calc((100%/12) * 8);
-}
-
-.grid-9 {
-  width:calc((100%/12) * 9);
-}
-
-.grid-10 {
-  width:calc((100%/12) * 10);
-}
-
-.grid-11 {
-  width:calc((100%/12) * 11);
-}
-
-.grid-12 {
-  width:100%;
+  .grid-mobile-12 {
+    width:100%;
+  }
 }

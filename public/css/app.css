@@ -194,52 +194,76 @@ h6 {
   float: left;
 }
 
-.grid-1 {
-  width: calc(100%/12);
+/**
+ * GRID FOR DESKTOP
+ */
+@media screen and (min-width: 1080px) {
+  .grid-desktop-1 {
+    width: calc(100%/12);
+  }
+  .grid-desktop-2 {
+    width: calc((100%/12) * 2);
+  }
+  .grid-desktop-3 {
+    width: calc(100%/4);
+  }
+  .grid-desktop-4 {
+    width: calc(100%/3);
+  }
+  .grid-desktop-5 {
+    width: calc((100%/12) * 5);
+  }
+  .grid-desktop-6 {
+    width: calc(100%/2);
+  }
+  .grid-desktop-7 {
+    width: calc((100%/12) * 7);
+  }
+  .grid-desktop-8 {
+    width: calc((100%/12) * 8);
+  }
+  .grid-desktop-9 {
+    width: calc((100%/12) * 9);
+  }
+  .grid-desktop-10 {
+    width: calc((100%/12) * 10);
+  }
+  .grid-desktop-11 {
+    width: calc((100%/12) * 11);
+  }
+  .grid-desktop-12 {
+    width: 100%;
+  }
 }
 
-.grid-2 {
-  width: calc((100%/12) * 2);
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .grid-tablet-3 {
+    width: calc(100%/4);
+  }
+  .grid-tablet-4 {
+    width: calc(100%/3);
+  }
+  .grid-tablet-6 {
+    width: 50%;
+  }
+  .grid-tablet-12 {
+    width: 100%;
+  }
 }
 
-.grid-3 {
-  width: calc(100%/4);
-}
-
-.grid-4 {
-  width: calc(100%/3);
-}
-
-.grid-5 {
-  width: calc((100%/12) * 5);
-}
-
-.grid-6 {
-  width: calc(100%/2);
-}
-
-.grid-7 {
-  width: calc((100%/12) * 7);
-}
-
-.grid-8 {
-  width: calc((100%/12) * 8);
-}
-
-.grid-9 {
-  width: calc((100%/12) * 9);
-}
-
-.grid-10 {
-  width: calc((100%/12) * 10);
-}
-
-.grid-11 {
-  width: calc((100%/12) * 11);
-}
-
-.grid-12 {
-  width: 100%;
+@media screen and (max-width: 479px) {
+  .grid-mobile-3 {
+    width: calc(100%/4);
+  }
+  .grid-mobile-4 {
+    width: calc(100%/3);
+  }
+  .grid-mobile-6 {
+    width: 50%;
+  }
+  .grid-mobile-12 {
+    width: 100%;
+  }
 }
 
 html, body {
@@ -282,7 +306,6 @@ header .nav-container {
   position: relative;
   padding-top: 20px;
   padding-bottom: 8px;
-  border-bottom: 2px solid #fff;
 }
 
 header .nav-container nav[role="navigation"] {
@@ -309,6 +332,22 @@ header .cart .cart-container {
   border-radius: 56%;
   background-color: #ff4d4d;
   color: #fff;
+}
+
+.logo-container {
+  width: 100%;
+}
+
+.logo-container > img {
+  width: 100%;
+  max-width: 365px;
+}
+
+@media screen and (max-width: 479px) {
+  .introduction {
+    text-align: center;
+    font-size: 0.9em;
+  }
 }
 
 footer {
