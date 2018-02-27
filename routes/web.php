@@ -11,4 +11,9 @@
 |
 */
 
+// Home page (Index page)
 Route::get('/', 'SiteController@index');
+// Product details page
+Route::get('/products/{id}', 'ProductController@show');
+// Product card slider implemented here
+Route::get('/showcase', 'SiteController@showcase');

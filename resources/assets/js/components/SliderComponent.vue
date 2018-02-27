@@ -39,7 +39,6 @@ export default {
     > .card {
       float:left;
       margin:0 10px;
-      // width:200px;
     }
   }
 </style>

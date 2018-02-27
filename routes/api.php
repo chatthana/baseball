@@ -17,6 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('/products', 'Api\ProductController@index');
+
 Route::post('/login', 'AuthenticationController@login');
 
 Route::post('/authenticate', 'AuthenticationController@authenticate');

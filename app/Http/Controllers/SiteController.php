@@ -10,14 +10,13 @@ use App\Product;
 class SiteController extends Controller
 {
     public function index() {
-        $product = Product::create([
-            "name" => "Test Name 3",
-            "description" => "Test Test Test",
-            "sku" => "KLS123",
-            "price" => 100,
-            "cover_image_path" => "https://www.google.co.th"
-        ]);
+        $product = Product::where('highlight', 1)->get();
+        return view('site.index', ["product" => $product->toJson()]);
+    }
 
-        return view('site.index');
+    public function showcase() {
+        return view('site.showcase');
+        // echo "<script>".json_encode(Product::findOrFail(1))."</script>";
+        // echo json_encode(Product::findOrFail(1));
     }
 }

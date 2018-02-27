@@ -92,6 +92,11 @@
 
 <script>
   export default {
+
+      created() {
+        console.log(this.item);
+      },
+
       mounted() {
         console.log('===== Product component mounted =====');
       },

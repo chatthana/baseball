@@ -14,18 +14,12 @@ class ProductController extends Controller
     }
 
     public function index() {
-      return \App\Product::where('highlight', 1)->get();
-    }
-
-    public function highlight() {
-      // return \App\Product::where('highlight', true)->where('active', true)->take(3);
-    }
-
-    public function slider() {
-      // return \App\Product::find();
+      $products = \App\Product::where('highlight', 1)->get();
+      return $products;
     }
 
     public function show($id) {
-      return \App\Product::findOrFail($id);
+      $product = \App\Product::findOrFail($id);
+      return view('product.show', ['product' => $product]);
     }
 }
