@@ -17,13 +17,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/products', 'Api\ProductController@index');
-
 Route::post('/login', 'AuthenticationController@login');
 
 Route::post('/authenticate', 'AuthenticationController@authenticate');
 
 # Prefix the version of the API
 Route::prefix('v1')->group(function() {
-  Route::resource('products', 'ProductController', ['only' => ['index', 'show']]);
+  Route::resource('products', 'Api\ProductController', ['only' => ['index', 'show']]);
 });

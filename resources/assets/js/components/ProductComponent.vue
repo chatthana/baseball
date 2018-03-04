@@ -34,6 +34,7 @@
     position: relative;
     width:100%;
     max-width:425px;
+    height:377px;
     background-color: #fff;
     opacity: 0.95;
     color: #000;
@@ -94,11 +95,10 @@
   export default {
 
       created() {
-        console.log(this.item);
       },
 
       mounted() {
-        console.log('===== Product component mounted =====');
+        console.log("MOUNTED", "Product Component");
       },
 
       props: ['item'],
@@ -111,7 +111,6 @@
 
       methods: {
         getProduct(product_id) {
-          console.log(product_id);
         }
       }
   }

@@ -1,12 +1,14 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Kanit:200,300,400,400i');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
 
 @import "../../bower/css-reset/reset.css";
 @import "blacknight";
 
 html,body {
   font-family: 'Kanit', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
   font-size: 100%;
   background: url('https://raw.githubusercontent.com/chatthana/baseballapp/master/public/images/IMG_9487.jpg') no-repeat center;
   background-size:cover;
@@ -57,11 +59,21 @@ header {
     position:relative;
     padding:10px 0;
     text-align:center;
+    .cart-item-indicator {
+      position: absolute;
+      right: 12px;
+      top: 3px;
+      background-color: rgb(0, 0, 0);
+      width: 20px;
+      z-index: 10;
+      height: 20px;
+      border-radius: 10px;
+    }
     .cart-container {
       position:relative;
       display:inline-block;
-      padding:15px;
-      width:48px;
+      padding:12px;
+      width:40px;
       border-radius:56%;
       background-color:#ff4d4d;
       color:#fff;

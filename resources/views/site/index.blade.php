@@ -14,8 +14,9 @@
         </div>
       </div>
       <div class="grid-desktop-4 grid-tablet-12 grid-mobile-12">
-        <slider-component></slider-component>
-        <a href="#" class="button transparent rounded" style="margin:20px 0;">ดูสินค้าทั้งหมด</a>
+        <!-- Attach a single product component -->
+        <product-component :item="{{ $product->toJson() }}"></product-component>
+        <a href="{{URL::to('/showcase')}}" class="button transparent rounded" style="margin:20px 0;">ดูสินค้าทั้งหมด</a>
       </div>
     </div>
   </div>

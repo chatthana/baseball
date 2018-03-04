@@ -324,11 +324,22 @@ header .cart {
   text-align: center;
 }
 
+header .cart .cart-item-indicator {
+  position: absolute;
+  right: 12px;
+  top: 3px;
+  background-color: black;
+  width: 20px;
+  z-index: 10;
+  height: 20px;
+  border-radius: 10px;
+}
+
 header .cart .cart-container {
   position: relative;
   display: inline-block;
-  padding: 15px;
-  width: 48px;
+  padding: 12px;
+  width: 40px;
   border-radius: 56%;
   background-color: #ff4d4d;
   color: #fff;

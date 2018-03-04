@@ -19,6 +19,8 @@
         "vue": "^2.1.10"
     },
     "dependencies": {
-        "css-reset": "0.0.1"
+        "css-reset": "0.0.1",
+        "slick-carousel": "^1.8.1",
+        "vue-slick": "^1.1.12"
     }
 }

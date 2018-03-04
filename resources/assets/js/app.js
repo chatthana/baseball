@@ -15,7 +15,7 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 Vue.component('slider-component', require('./components/SliderComponent.vue'));
-Vue.component('prouduct-component', require('./components/ProductComponent.vue'));
+Vue.component('product-component', require('./components/ProductComponent.vue'));
 
 const app = new Vue({
     el: '#app'

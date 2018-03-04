@@ -30,9 +30,9 @@
             </div>
             <div class="grid-desktop-1 grid-tablet-1">
               <div class="cart">
-                <div style="position:absolute; right:0; top:-5px; background-color:#000; width:20px; height:20px; border-radius: 10px;">1</div>
+                <div class="cart-item-indicator">1</div>
                 <div class="cart-container">
-                  <i class="fa fa-shopping-cart fa-lg"></i>
+                  <i class="fa fa-shopping-cart"></i>
                 </div>
               </div>
             </div>
