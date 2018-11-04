@@ -17,4 +17,8 @@ class SiteController extends Controller
     public function showcase() {
         return view('site.showcase');
     }
+
+    public function contact() {
+        return view('site.contact');
+    }
 }

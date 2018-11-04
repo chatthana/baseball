@@ -146,6 +146,7 @@ h6 {
 
 .button {
   display: inline-block;
+  margin: 8px 0;
   padding: 10px 15px;
   background-color: #dadada;
   color: #000;
@@ -264,6 +265,12 @@ h6 {
   .grid-mobile-12 {
     width: 100%;
   }
+}
+
+input[type=text].form-element {
+  border: 1px solid #dadada;
+  padding: 5px 8px;
+  background-color: #fff;
 }
 
 html, body {
@@ -385,4 +392,12 @@ footer .contact-information .telephone-numbers {
   position: relative;
   float: left;
   margin: 0 10px;
+}
+
+.contact-box {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  color: #000;
 }

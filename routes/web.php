@@ -17,3 +17,5 @@ Route::get('/', 'SiteController@index');
 Route::get('/products/{id}', 'ProductController@show');
 // Product card slider implemented here
 Route::get('/showcase', 'SiteController@showcase');
+// Contact Page
+Route::get('/contact', 'SiteController@contact');

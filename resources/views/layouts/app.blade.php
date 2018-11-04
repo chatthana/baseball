@@ -13,7 +13,7 @@
         <div class="wrapper-spread">
           <div class="row">
             <div class="grid-desktop-1 grid-tablet-1">
-              <a href="#" class="header-logo">
+              <a href="{{url('/')}}" class="header-logo">
                 <img src="https://raw.githubusercontent.com/chatthana/baseballapp/master/public/images/Main-Logo.png" />
               </a>
             </div>
@@ -21,7 +21,7 @@
               <div class="nav-container clearfix">
                 <nav role="navigation">
                   <ul class="clearfix">
-                    <li><a href="#">ติดต่อเรา</a></li>
+                    <li><a href="{{url('/contact')}}">ติดต่อเรา</a></li>
                     <li><a href="#">แจ้งชำระเงิน</a></li>
                     <li><a href="#">ตรวจสอบสถานะสินค้า</a></li>
                   </ul>

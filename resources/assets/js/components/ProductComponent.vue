@@ -22,7 +22,7 @@
       </div>
       <div class="specification">
         <p class="title">ราคา :</p>
-        <p class="value">{{product.price}} บาท</p>
+        <p class="value">{{product.price.toLocaleString()}} บาท</p>
       </div>
       <a href="#" v-on:click="getProduct(product.id)" class="button red rounded">Add to cart</a>
     </div>
